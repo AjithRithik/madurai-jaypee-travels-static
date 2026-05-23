@@ -267,7 +267,7 @@
 											HOME</a></li>
 									<li><a class="transition-effect" href="about-us.html"><i class="fa fa-user"></i>
 											ABOUT US</a></li>
-									<li><a class="transition-effect" href="tour-packages.html"><i
+					<li><a class="transition-effect" href="https://package.maduraijaypeetravels.com/tours" target="_blank" rel="noopener noreferrer"><i
 												class="fa fa-bell"></i> TOURS</a></li>
 									<li><a class="active transition-effect" href="tariff.html"><i
 												class="fa fa-taxi"></i> TARIFF</a></li>
@@ -889,13 +889,19 @@
 					<p>
 						<a href="index.html">HOME</a>
 						<a href="about-us.html">ABOUT US</a>
-						<a href="tour-packages.html">TOURS</a>
+					<a href="https://package.maduraijaypeetravels.com/tours" target="_blank" rel="noopener noreferrer">TOURS</a>
 						<a href="tariff.html">TARIFF</a>
 						<a href="contact-us.html">CONTACT US</a>
 					</p>
 					<p class="copyright">
-						&copy; 2024 Madurai Jaypee Travels. All Rights Reserved. Designed By 3pweb
+						&copy; <span class="copyright-year"></span> Madurai Jaypee Travels. All Rights Reserved.
 					</p>
+					<script>
+						document.addEventListener('DOMContentLoaded', function() {
+							var years = document.querySelectorAll('.copyright-year');
+							years.forEach(function(el) { el.textContent = new Date().getFullYear(); });
+						});
+					</script>
 					<div class="go-up">
 						<a href="#"><i class="fa fa-arrow-up"></i></a>
 					</div>
